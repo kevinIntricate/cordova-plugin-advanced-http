@@ -140,7 +140,7 @@ module.exports = function init(exec, cookieHandler, urlUtil, helpers, globalConf
     helpers.handleMissingCallbacks(success, failure);
 
     options = helpers.handleMissingOptions(options, globalConfigs);
-    url = urlUtil.appendQueryParamsString(url, urlUtil.serializeQueryParams(options.params, true));
+    // url = urlUtil.appendQueryParamsString(url, urlUtil.serializeQueryParams(options.params, true));
 
     var headers = helpers.getMergedHeaders(url, options.headers, globalConfigs.headers);
 
